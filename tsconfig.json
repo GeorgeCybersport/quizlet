@@ -11,14 +11,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@main/*": ["./*"],
-     },
+      "@main/*": ["./*"]
+    },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
   "ts-node": {
-    "compilerOptions": { 
-      "module": "CommonJS",
+    "compilerOptions": {
+      "module": "CommonJS"
     }
   }
 }
