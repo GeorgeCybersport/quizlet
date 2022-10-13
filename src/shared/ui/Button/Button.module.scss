@@ -51,7 +51,6 @@
     }
 }
 
-
 .secondary{
     border: 0.0625rem solid #d9dde8;
     background: $--gray-100-twilight-900;
@@ -70,19 +69,9 @@
 .info{}
 .warning{}
 
-
 /*the variants of  component*/
-// .text{
-//     &:hover {
-//         background: ;
-//     }
-//     &:active {
-//         background: ;
-//     }
-//     &:focus {
-//         outline: 0.0625rem solid #a8b1ff;  
-//     }
-// }
+// .text{}
+
 .outlined{
     border:  1px solid rgba( 0 0 1/ 0.5);
 }
@@ -110,23 +99,17 @@
     font-size: .875rem;
 }
 
-.medium, .large {
+.medium, .large, .fullWidth {
     border-radius: 0.5rem; 
     font-weight: 600;
 }
-.small, .medium, .large {
+.small, .medium, .large, .fullWidth {
     letter-spacing: normal;
     -webkit-letter-spacing: normal;
     -moz-letter-spacing: normal;
     -ms-letter-spacing: normal;
     line-height: 1.4285714285714286;
 }
-
-
-
-
-
-/* fullWidth component */
 
 .fullWidth {
     width: 100%;

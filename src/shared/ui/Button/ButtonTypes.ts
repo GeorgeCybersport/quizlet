@@ -16,11 +16,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    * `small` is equivalent to the dense button styling.
    * @default 'medium'
    */
-  size?: 'small' | 'medium' | 'large'
-  /**
-  * If true, the button will take up the full width. width=100%
-  * @default false
-  */
-  fullWidth?: boolean
+  size?: 'small' | 'medium' | 'large' | 'fullWidth'
   className?: string
 };
