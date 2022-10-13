@@ -1,3 +1,17 @@
-.div{
-  color: red;
+.div {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: calc(100vh - 21.25px);
+}
+
+.text {
+  position: absolute;
+  bottom: 63%;
+  font-size: 30px;
+  color: white;
+  left: 50.5%;
+  transform: translateX(-50%);
 }
