@@ -21,7 +21,7 @@ module.exports = {
     'react'
   ],
   rules: {
-    semi: ['error', 'always'],
+    semi: 'off',
     indent: [2, 2],
     'no-unused-vars': 'warn',
 
@@ -30,9 +30,19 @@ module.exports = {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'warn',
-
+    'member-delimiter-style': 'default',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/semi': ['error', 'always']
+    '@typescript-eslint/semi': ['error', 'always'],
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      multiline: {
+        delimiter: 'semi', 
+        requireLast: true,
+      },
+      singleline: {
+        delimiter: 'semi',
+        requireLast: false,
+      },
+    }]
   }
 };
