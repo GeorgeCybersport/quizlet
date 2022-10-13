@@ -1,0 +1,116 @@
+/* The color of component*/
+@import '../../../app/assets/scss/variables.scss';
+
+.base {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font: inherit;   
+    padding: 0.625rem 1rem;
+    background: #4255ff;
+    color: #fff;
+
+    &:hover {
+        background: #423ed8;
+    }
+
+    &:active{
+        background: #1f1c8b;
+    }
+}
+
+.inherit { 
+    padding: 0.75rem 1.5rem;
+}
+
+.primary{
+    background: #ffcd1f;
+    color: #282e3e;
+
+    &:hover {
+        background: #ffdc62;
+    }
+
+    &:active {
+        background: #ffedab;
+    }
+}
+
+.secondary{
+    border: 0.0625rem solid #d9dde8;
+    background: $--gray-100-twilight-900;
+    color: $--gray-600-gray-200;
+
+    &:hover {
+        background: $--gray-300-gray-700;
+    }
+    
+    &:active {
+        background: $--gray-400-gray-800;
+    }
+}
+.success{}
+.error{}
+.info{}
+.warning{}
+
+/*the variants of  component*/
+// .text{}
+
+.outlined{
+    border:  1px solid rgba( 0 0 1/ 0.5);
+}
+
+.contained{}
+
+/* the size of component*/
+.small{
+    padding: .375rem 0.75rem;
+    min-height: 2rem;
+    border-radius: 0.25rem;
+}
+
+.medium{
+    min-height: 2.5rem;
+}
+
+.large{
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 3rem;
+}
+
+.small, .medium {
+    font-size: .875rem;
+}
+
+.medium, .large, .fullWidth {
+    border-radius: 0.5rem; 
+    font-weight: 600;
+}
+.small, .medium, .large, .fullWidth {
+    letter-spacing: normal;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    line-height: 1.4285714285714286;
+}
+
+.fullWidth {
+    width: 100%;
+}

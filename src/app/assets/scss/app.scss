@@ -1,0 +1,42 @@
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+html {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    display: block;
+}
+
+body, html {
+    // color:;
+    // font-family: ;
+    font-size: 100%;
+    line-height: 1.625;
+}
+title {
+    font-size: 20px;
+}
+
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{}
+span{}
+
+
+body, button, form, h1, h2, h3, h4, h5, h6, input, ul, li, ol, p, textarea, th, td, dl, dt, dd, fieldset, legend, blockquote, code, pre{
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: #c5f1f1;
+}
