@@ -9,11 +9,14 @@
     border-radius: var(--radius-small);
 
     &__header {
-       
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        & p {
+            display: block;
+        }
     }
 
     &__content {
@@ -24,7 +27,7 @@
         min-height: 150px;
         height: 100%;
         max-height: 300px;
-        width: 100%; 
+        width: 100%;
     }
 
     &__word {
@@ -38,9 +41,9 @@
 
     &__footer {
         display: grid;
-        grid-row: 1fr;
-        grid-column: 1fr 1fr;
-        gap:10px;
+        //grid-row: 1fr;
+        //grid-column: 1fr 1fr;
+        gap: 10px;
     }
 
     &__arrow  {
@@ -49,10 +52,10 @@
         border: 2px solid var(--gray-400-gray-500);
         padding: 0.25rem;
 
-      
+
         &Left {
             grid-column: 1 / 2;
-           
+
         }
 
         &Right {
@@ -84,7 +87,7 @@
 @media screen and (min-width: 960px ){
     .card {
         border-radius: var(--radius-large);
-    } 
+    }
 }
 
 

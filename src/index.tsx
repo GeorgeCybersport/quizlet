@@ -11,7 +11,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <div className={styles.div}>
-      <FlashCards text='fdasfs'/>
+      <FlashCards />
     </div>
   </StrictMode>
 );
