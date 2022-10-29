@@ -18,4 +18,4 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    */
   size?: 'small' | 'medium' | 'large' | 'fullWidth'
   className?: string
-};
+}

@@ -1,0 +1,114 @@
+.card {
+    box-sizing: border-box;
+    background: var(--gray-100-gray-600);
+    padding: 20px;
+    min-width: 300px;
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--radius-small);
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+        height: 100%;
+        max-height: 300px;
+        width: 100%;
+    }
+
+    &__word {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        word-wrap: break-word;
+        position: relative;
+        word-break: break-word;
+    }
+
+    &__footer {
+        display: grid;
+        //grid-row: 1fr;
+        //grid-column: 1fr 1fr;
+        gap: 10px;
+    }
+
+    &__arrow  {
+        grid-row: span 1;
+        border-radius: var(--radius-small);
+        border: 2px solid var(--gray-400-gray-500);
+        padding: 0.25rem;
+
+
+        &Left {
+            grid-column: 1 / 2;
+
+        }
+
+        &Right {
+            grid-column: 2 / 3;
+        }
+        &Left, &Right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            border-color: var(--gray-300-gray-500);
+            outline: none;
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media screen and (min-width: 640px ){
+    .card {
+        border-radius: var(--radius-medium);
+        max-width: 600px;
+        max-height: 600px;
+    }
+}
+
+@media screen and (min-width: 960px ){
+    .card {
+        border-radius: var(--radius-large);
+    }
+}
+
+
+.icons {
+    height: 100%;
+    width: 100%;
+    color: var(--ui_color_default_foreground);
+
+    &:hover {
+        color: var(--yellow-200);
+        cursor: pointer;
+    }
+
+    &:active {
+        color: var(--yellow-400);
+        cursor: pointer;
+    }
+
+    &.active {
+        color: var(--yellow-300);
+    }
+}
+
+
