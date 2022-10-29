@@ -1,23 +1,34 @@
+@import "helpers";
+@import "variables";
+@import "nightTheme";
+@import 'colorVariables';
+
 *, :after, :before {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 
 html {
     display: block;
-    box-sizing: border-box;
     height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     display: block;
+    background-color: var(--app-background);
 }
 
 body, html {
-    // color:;
-    // font-family: ;
+    color: var(--ui_color_default_foreground);
+    font-family: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 100%;
     line-height: 1.625;
 }
+
 title {
     font-size: 20px;
 }
@@ -31,12 +42,15 @@ h6{}
 p{}
 span{}
 
-
 body, button, form, h1, h2, h3, h4, h5, h6, input, ul, li, ol, p, textarea, th, td, dl, dt, dd, fieldset, legend, blockquote, code, pre{
     margin: 0;
     padding: 0;
 }
-
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
 ::selection {
     background-color: #c5f1f1;
 }
